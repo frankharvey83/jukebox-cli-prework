@@ -29,7 +29,8 @@ def play(songs)
   input = gets.downcase.chomp
 
   songs.each_with_index do |song, index|
-    if songs == input
+    binding.pry
+    if songs.include? input
       puts "Playing #{input}"
     elsif input.to_i - 1 == index
       puts "Playing #{songs[input.to_i - 1]}"
