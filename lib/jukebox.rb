@@ -33,8 +33,8 @@ def play(songs)
     puts "Playing #{song}"
   elsif input.to_i - 1 == index
     puts "Playing #{song}"
-  # else
-  #   puts "Invalid input, please try again"
+  else
+    puts "Invalid input, please try again"
     end
   end
 end
