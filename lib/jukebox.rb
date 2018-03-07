@@ -29,23 +29,24 @@ def play(songs)
   input = gets.downcase.chomp
 
   songs.each_with_index do |song, index|
-  if songs.include? input
-    puts "Playing #{input}"
-  elsif input.to_i - 1 == index
-    puts "Playing #{songs[input.to_i - 1]}"
-  else
-    puts "Invalid input, please try again"
+    if songs.include?(input)
+      puts "Now playing song #{input}"
+    elsif songs[input.to_i - 1]
+      puts "Now playing #{songs[input.to_i - 1]}"
+    else
+      puts "Invalid input. Please try again"
     end
-  end
+    end
 end
 
-# if songs.include?(input)
-#   puts "Now playing song #{input}"
-# elsif songs[input.to_i - 1]
-#   puts "Now playing #{songs[input.to_i - 1]}"
+
+# if songs.include? input
+#   puts "Playing #{input}"
+# elsif input.to_i - 1 == index
+#   puts "Playing #{songs[input.to_i - 1]}"
 # else
-#   puts "Invalid input. Please try again"
-# end
+#   puts "Invalid input, please try again"
+#   end
 # end
 
 def exit_jukebox
