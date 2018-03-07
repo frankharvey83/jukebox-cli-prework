@@ -57,6 +57,7 @@ when "play"
   play
 when "exit"
   exit_jukebox
-  break
+
 end
+
 end
