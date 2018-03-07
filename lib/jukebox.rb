@@ -14,8 +14,7 @@ songs = [
 
 
 
-def list(arr)
-  new_arr = []
-  arr.each_with_index do |each, index|
-  end
+def list(songs)
+  songs.each_with_index { |item, index|
+    puts "#{index+1}. #{item}" }
 end
