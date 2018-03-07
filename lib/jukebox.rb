@@ -23,7 +23,7 @@ def play(songs)
   input = gets.chomp
 
   songs.each_with_index do |song, index|
-  if songs.include? input || input == index+1
+  if songs.include? input || input.to_i == index+1
     puts "Playing #{song}"
   else
     puts "Invalid input, please try again"
