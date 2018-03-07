@@ -26,7 +26,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number: "
-  input = gets.downcase.chomp
+  input = gets.chomp
 
   songs.each_with_index do |song, index|
     if songs.include? input
