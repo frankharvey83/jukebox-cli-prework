@@ -1,4 +1,4 @@
-
+require 'pry'
 
 songs = [
   "Phoenix - 1901",
