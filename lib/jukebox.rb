@@ -29,9 +29,9 @@ def play(songs)
    puts
    puts "What song do you want to play. Enter song name or number"
    input = gets.chomp.downcase
-  
+
      if songs.include?(input)
-       puts "Now playing song #{song_pick}"
+       puts "Now playing song #{input}"
      elsif songs[input.to_i - 1]
        puts "Now playing #{songs[input.to_i - 1]}"
      else
