@@ -25,19 +25,19 @@ def list(songs)
 end
 
 def play(songs)
-  puts "Please enter a song name or number: "
-  input = gets.downcase.chomp
-
-  songs.each_with_index do |song, index|
-  if songs.include? input
-    puts "Playing #{song}"
-  elsif input.to_i - 1 == index
-    puts "Playing #{song}"
-  else
-    puts "Invalid input, please try again"
-    end
-  end
-end
+   list(songs)
+   puts
+   puts "What song do you want to play. Enter song name or number"
+   input = gets.chomp.downcase
+  
+     if songs.include?(input)
+       puts "Now playing song #{song_pick}"
+     elsif songs[input.to_i - 1]
+       puts "Now playing #{songs[input.to_i - 1]}"
+     else
+       puts "Invalid input. Please try again"
+     end
+ end
 
 def exit_jukebox
   puts "Goodbye"
