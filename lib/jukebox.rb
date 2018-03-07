@@ -28,7 +28,7 @@ def play(songs)
   puts "Please enter a song name or number: "
   input = gets.downcase.chomp
 
-  songs.each_with_index do |song, index|
+  # songs.each_with_index do |song, index|
     if songs.include?(input)
       puts "Now playing song #{input}"
     elsif songs[input.to_i - 1]
