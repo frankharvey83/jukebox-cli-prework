@@ -1,6 +1,6 @@
 require 'pry'
 
-arr = [
+songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
   "Sufjan Stevens - Too Much",
@@ -16,7 +16,6 @@ arr = [
 
 def list(arr)
   new_arr = []
-
   arr.each_with_index do |each, index|
   end
 end
