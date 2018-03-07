@@ -26,7 +26,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number: "
-  input = gets.chomp
+  input = gets.downcase.chomp
 
   songs.each_with_index do |song, index|
   if songs.include? input
@@ -44,5 +44,18 @@ def exit_jukebox
 end
 
 def run
+help
+puts "Please enter a command:"
+response = gets.downcase.chomp
 
+case response
+when "help"
+  help
+when "list"
+  list
+when "play"
+  play
+when "exit"
+  exit_jukebox
+  break
 end
